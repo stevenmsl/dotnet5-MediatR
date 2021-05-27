@@ -1,0 +1,21 @@
+﻿- install MediatR on the project where you
+  define queries, commands, and handlers
+  - you need to define an entry point
+    to facilitate the DI #TA01
+
+- queries and commands are the same to MediatR
+  - they all extend the IRequest interface #TA02
+    - you specify what you will get from the
+      request, and what to return in the response
+  - we separate them logically for applying 
+    CQRS pattern purpose
+
+- handlers #TA03
+  - this is where you put the business logic and
+    access the data
+  - you specify what command or query you want to
+    handle, and you need to return whatever dictates
+    by the command or query
+
+- you can use mediator inside the handlers as well 
+  to decouple the among the handlers #TA04

@@ -1,0 +1,11 @@
+﻿- install MediatR.Extensions.Microsoft.DependencyInjection where
+  you want to use the commands and queries to get certain tasks
+  done
+  - you need to configure the DI for MediatR to 
+    target the assembly where the commands and  
+    queries are defined #TA01
+
+- you shouldn't be aware of the handlers, all you care
+  is to issue commands or queries to get the job done
+  and get the result back #TA02
+
